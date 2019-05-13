@@ -34,7 +34,8 @@ testdata$Loan_ID = NULL
 #dataset$Credit_History = factor(dataset$Credit_History, levels = c("0","1"), labels = c(0,1))
 dataset$Loan_Status = factor(dataset$Loan_Status, levels = c('N','Y'), labels = c(0,1))
 
-# In XGBoot If you encoded your categorical variables as numeric but casted them as factors, you will get this error so i am converting them into numeric
+# In XGBoot If you encoded your categorical variables as numeric but casted them as factors, you will get this error
+# so i am converting them into numeric
 dataset$Gender = as.numeric(dataset$Gender)
 dataset$Married = as.numeric(dataset$Married)
 dataset$Education = as.numeric(dataset$Education)
